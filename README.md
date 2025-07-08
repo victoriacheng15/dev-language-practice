@@ -43,3 +43,5 @@ This is my Go learning journey—basically a documentary of me wrestling with Go
 - Day 37: Pointers
 - Day 38: JSON
 - Day 39: A simple CLI that reads a file with cobra
+<!-- Beginning TDD today as part of my learning journey -->
+- Day 40: Hello world test
