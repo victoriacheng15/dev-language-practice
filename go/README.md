@@ -1,0 +1,48 @@
+# The Gopher Learning
+
+This is my Go learning journey—basically a documentary of me wrestling with Gophers and figuring things out one bug at a time! 🐹🚀
+
+## Progress
+
+- Day 01: Basic "Hello, World!" function
+- Day 02: Declaring variables with types using `var`
+- Day 03: Declaring variables with types using **`const`**
+- Day 04: Data Types - Booleans and Integers
+- Day 05: Data Types - floating-point numbers with float32 and float64\
+- Day 06: Data Type - string
+- Day 07: Data Type - byte and rune
+- Day 08: Printf `general` formatting verbs
+- Day 09: Printf `integer` formatting verbs
+- Day 10: Printf `string` and `boolean` formatting verbs
+- Day 11: Printf `float` formatting verbs
+- Day 12: Printf vs Sprintf
+- Day 13: For Loop
+- Day 14: Range
+- Day 15: If/Else statements
+- Day 16: Switch statements
+- Day 17: Errors, Panic, and Recover
+- Day 18: Functions
+- Day 19: Packages, imports, and exports
+- Day 20: Type casting
+- Day 21: Type inference
+- Day 22: Arrays
+- Day 23: Slices
+- Day 24: Maps
+- Day 25: Make()
+- Day 26: Structs
+- Day 27: Types and type assertions
+- Day 28: Interfaces
+- Day 29: Context
+- Day 30: Goroutines
+- Day 31: Channels
+- Day 32: Buffer
+- Day 33: Select
+- Day 34: Mutex
+- Day 35: Scheduler
+- Day 36: Generics
+- Day 37: Pointers
+- Day 38: JSON
+- Day 39: A simple CLI that reads a file with cobra
+<!-- Beginning TDD today as part of my learning journey -->
+- Day 40: Hello world Test
+- Day 41: Addition Test
