@@ -1,0 +1,24 @@
+require:
+  - rubocop-performance
+  - rubocop-minitest
+  - rubocop-rake
+
+AllCops:
+  # Exclude directories like vendor/bundle, logs, etc.
+  Exclude:
+    - "vendor/**/*"
+    - "db/schema.rb"
+    - "config/**/*"
+    - "Rakefile" # Often excluded
+
+Layout/LineLength:
+  Max: 120 # Allow lines up to 120 characters
+
+Metrics/MethodLength:
+  Max: 30 # Keep methods relatively short
+
+Metrics/BlockLength:
+  Max: 50 # Limit block length to keep them manageable
+
+Style/Documentation:
+  Enabled: false # Disable the requirement for documentation comments (optional)
