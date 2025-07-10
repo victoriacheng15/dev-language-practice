@@ -1,26 +1,27 @@
-name: RuboCop Format
+name: Ruby CI
 
 on:
   push:
     branches: [main]
     paths:
-      - 'lib/**'
-      - 'test/**'
+      - 'ruby/lib/**'
+      - 'ruby/test/**'
   pull_request:
     branches: [main]
     paths:
-      - 'lib/**'
-      - 'test/**'
+      - 'ruby/lib/**'
+      - 'ruby/test/**'
 
 jobs:
   rubocop:
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: ruby
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref || 'main'}}
+          ref: ${{ github.head_ref || 'main' }}
           persist-credentials: true
 
       - name: Set up Ruby
@@ -34,7 +35,7 @@ jobs:
 
       - name: Run RuboCop
         run: bundle exec rubocop -A lib/ test/
-      
+
       - name: Git config
         run: |
           git config --local user.name "github-actions[bot]"
@@ -51,3 +52,24 @@ jobs:
             git commit -m "ci: fix RuboCop offenses"
             git push origin HEAD:${{ github.head_ref }}
           fi
+
+  test:
+    runs-on: ubuntu-latest
+    needs: rubocop
+    defaults:
+      run:
+        working-directory: ruby
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4'
+          bundler-cache: true
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Run tests
+        run: bundle exec rake test
