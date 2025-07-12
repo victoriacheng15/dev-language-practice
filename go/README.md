@@ -46,3 +46,4 @@ This is my Go learning journey—basically a documentary of me wrestling with Go
 - Day 40: Hello world Test
 - Day 41: Addition Test
 - Day 42: Repeat Test
+- Day 43: Arrays/Slices Addition Test
