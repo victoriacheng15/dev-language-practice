@@ -4,10 +4,10 @@ This repository is my personal playground for learning and practicing various pr
 
 Currently, the repository includes:
 
--   **Go**: My journey learning the Go programming language.
-    -   [Go README](go/README.md)
+- **Go**: Daily logs and exercises from my Go learning journey.
+    - [Go README](go/README.md)
 
--   **Ruby**: My exploration of Ruby, focusing on building command-line interface (CLI) tools.
-    -   [Ruby README](ruby/README.md)
+- **Ruby**: My exploration of Ruby, focusing on building command-line interface (CLI) tools.
+    - [Ruby README](ruby/README.md)
 
 Feel free to browse the individual language folders to see my progress and projects.
